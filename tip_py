@@ -1,0 +1,8 @@
+def calculate_tip(bill_amount, tip_percent=15):
+    tip = bill_amount * (tip_percent / 100)
+    total = bill_amount + tip
+    return tip, total
+
+# Example:
+tip, total = calculate_tip(50, 20)
+print(f"Tip: ${tip:.2f}, Total Bill: ${total:.2f}")
